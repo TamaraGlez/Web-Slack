@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     padding: 0;
+    margin: 0;
     text-decoration: none;
     list-style: none;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
@@ -9,13 +10,6 @@
 html, body, #root {
     height: 100%;
     margin:0 
-}
-
-h2 {
-    margin-bottom: 1em;
-}
-p  {
-    margin-bottom: 1em;
 }
 
 .header {
@@ -53,9 +47,8 @@ p  {
 .trust {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 16px;
     background-color: #ffffff;
-    padding-bottom: 20px;
 
     &-companies {
         display: flex;
@@ -67,60 +60,60 @@ p  {
 
     &-companies_text {
         text-transform: uppercase;
+        padding: 18px;
+        text-align: center;
 
     }
     &-companies_logos {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        padding-bottom: 26px;
         align-items: center;
         justify-content: space-evenly;
-        padding-bottom: 20px;
-
-            .containerLogo {
-                padding-right: 30px;
-            }
+        .containerLogo {
+            padding-right: 30px;
+        }
+    }
+// quiero que le afecte a los dos hijos y no se como alinear el contenedor también
+    &-features:nth-child(even) {
+        text-align: right;
+        padding-right: 16px;
     }
 
     &-features {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        padding-bottom: 36px;
         width: 100%;
+        flex-wrap: wrap;
 
-            &_container {
-                display: flex;
-                border-radius: 0px 500px 500px 0px;;
-                width: 40%;
-                height: 300px;
-                background-color: #36c5f1
- 
+        &_container {
+            border-radius: 0px 500px 500px 0px;
+            .imageFeatures{
+                width: 100%;
+                object-fit: cover;
             }
+            background-color: #36c5f1
+        }
+        
 
-            &_details {
-                width: 350px;
-                display: flex;
-                flex-direction: column;
-                font-weight: 900;
-                h2 {
-                    font-size: 28px;
-                    margin-top: 1em;
-                }
-                p{
-                    margin-top: 1em;
-                }
+        &_details {
+            font-size: 18px;
+            padding-left: 16px;
+            width: 100%;
+            font-weight: 900;
+            h2 {
+                font-size: 32px;
+                padding-top: 16px;
+                padding-bottom: 16px;
             }
-
+            p {
+                padding-bottom: 16px
+            }
+        }
     }
-
-.imageFeatures {
-    object-fit: cover;
-
-
-}
-
-}
-
+};
+    
 .testimonials {
     height: 200px;
     background-color: rgb(154, 154, 154)
