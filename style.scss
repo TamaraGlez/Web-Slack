@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+html, body, #root {
+    height: 100%;
+    margin:0 
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+p  {
+    margin-bottom: 1em;
+}
+
+.header {
+    padding: 18px;
+    color: white;
+    background-color: #541554;
+    padding-bottom: 20px;
+    
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+
+    &-register {
+        display: flex;
+        flex-direction: column;
+        padding: 18px 0px 18px 0px; 
+    }
+
+    &-image {
+        width: 250px;
+        align-content: center;
+    }
+
+}
+
+.trust {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+
+    &-companies {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+
+    &-companies_text {
+        text-transform: uppercase;
+
+    }
+    &-companies_logos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 20px;
+
+            .containerLogo {
+                padding-right: 30px;
+            }
+    }
+
+    &-features {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+
+            &_container {
+                display: flex;
+                border-radius: 0px 500px 500px 0px;;
+                width: 40%;
+                height: 300px;
+                background-color: #36c5f1
+ 
+            }
+
+            &_details {
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+                font-weight: 900;
+                h2 {
+                    font-size: 28px;
+                    margin-top: 1em;
+                }
+                p{
+                    margin-top: 1em;
+                }
+            }
+
+    }
+
+.imageFeatures {
+    object-fit: cover;
+
+
+}
+
+}
+
+.testimonials {
+    height: 200px;
+    background-color: rgb(154, 154, 154)
+
+}
+.features {
+    height: 200px;
+    background-color: rgb(255, 0, 221)
+}
+
+.cta {
+    height: 200px;
+    background-color: rgb(68, 255, 0)
+
+}
+
+.footer {
+    height: 200px;
+    background-color: rgb(55, 0, 255)
+
+}
+
