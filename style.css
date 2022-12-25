@@ -53,36 +53,41 @@ p {
 
 .trust {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 16px;
   background-color: #ffffff;
 }
 .trust-companies {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
   width: 100%;
+  background-color: #f4ede4;
 }
 .trust-companies_text {
+  display: flex;
   text-transform: uppercase;
   padding: 18px;
-  text-align: center;
+  justify-content: center;
 }
 .trust-companies_logos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   padding-bottom: 26px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  max-width: 1010px;
 }
 .trust-companies_logos .containerLogo {
-  padding-right: 30px;
+  padding: 16px;
 }
 .trust-features:nth-child(even) {
-  text-align: right;
+  display: flex;
   padding-right: 16px;
+  justify-content: end;
+  flex-direction: row-reverse;
 }
 .trust-features {
   display: flex;
@@ -92,31 +97,38 @@ p {
 }
 .trust-features_container {
   border-radius: 0px 500px 500px 0px;
+  width: auto;
   background-color: #36c5f1;
 }
 .trust-features_container .imageFeatures {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
+  align-content: flex-end;
 }
 .trust-features_details {
   font-size: 18px;
   padding-left: 16px;
-  width: 100%;
-  font-weight: 900;
+  width: 400px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
 }
 .trust-features a {
   padding: 10px;
-  color: cornflowerblue;
+  color: rgb(28, 80, 177);
   font-weight: bold;
 }
 
 .testimonials {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   padding-top: 56px;
+  justify-content: center;
 }
 .testimonials h2 {
   text-align: center;
@@ -127,13 +139,14 @@ p {
 }
 .testimonials-contact {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
-  align-items: center;
+  justify-content: center;
 }
 .testimonials-contact-containerColourFirst {
   display: flex;
-  margin-bottom: 6px;
+  margin: 6px;
   width: 340px;
   height: 40px;
   border-radius: 4px 4px 4px 4px;
@@ -153,6 +166,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 6px;
   width: 340px;
   height: 40px;
   border-style: solid;
