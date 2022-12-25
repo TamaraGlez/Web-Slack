@@ -5,12 +5,24 @@
   text-decoration: none;
   list-style: none;
   font-family: Calibri, "Trebuchet MS", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
+}
+
+h2 {
+  font-size: 26px;
+  padding: 10px;
+}
+
+p {
+  font-weight: bold;
+  padding: 10px;
 }
 
 .header {
@@ -93,18 +105,98 @@ html, body, #root {
   width: 100%;
   font-weight: 900;
 }
-.trust-features_details h2 {
-  font-size: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-.trust-features_details p {
-  padding-bottom: 16px;
+.trust-features a {
+  padding: 10px;
+  color: cornflowerblue;
+  font-weight: bold;
 }
 
 .testimonials {
-  height: 200px;
-  background-color: rgb(154, 154, 154);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 56px;
+}
+.testimonials h2 {
+  text-align: center;
+}
+.testimonials p {
+  text-align: center;
+  padding: 16px;
+}
+.testimonials-contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.testimonials-contact-containerColourFirst {
+  display: flex;
+  margin-bottom: 6px;
+  width: 340px;
+  height: 40px;
+  border-radius: 4px 4px 4px 4px;
+  background-color: #541554;
+}
+.testimonials-contact-containerColourFirst a {
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 340px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-contact-containerWhite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  height: 40px;
+  border-style: solid;
+  border-color: #541554;
+  border-width: thin;
+  border-radius: 4px 4px 4px 4px;
+}
+.testimonials-contact-containerWhite a {
+  color: #541554;
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 340px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-stadistics {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 66px;
+}
+.testimonials-stadistics-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 80%;
+  text-align: center;
+}
+.testimonials-stadistics_porcentaje {
+  display: flex;
+  align-items: center;
+  color: #541554;
+  font-size: 50px;
+  font-weight: bold;
+}
+.testimonials-stadistics_caption {
+  width: 100%;
 }
 
 .features {
