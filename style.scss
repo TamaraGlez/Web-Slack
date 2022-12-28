@@ -1,3 +1,5 @@
+@import "./reset.css";
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -133,6 +135,7 @@ p {
 .testimonials {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   padding-top: 56px;
   justify-content: center;
@@ -198,13 +201,15 @@ p {
 
   &-stadistics {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
+    text-align: center;
+    justify-content: center;
     padding-top: 56px;
     padding-bottom: 66px;
-    
+    justify-content: center;
+    width: 100%;
+
     &-container {
       display: flex;
       align-items: center;
@@ -223,30 +228,38 @@ p {
     }
     &_caption {
       width: 100%;
-
     }
   }
 
+  &-movie {
+    display: flex;
+    text-align: left;
 
+    &_container {
+      display: flex;
+      width: 100%;
+      max-height: 200px;
+    }
+  };
+};
 
-}
+  // &-movie {
+  //   display: flex;
+  //   overflow: hidden;
+  //   position: relative;
+  //   width: 100%;
+  //   height: 0;
 
-// &-stadistics {
-// }
-// &-movie {
-// }
-
-.features {
-  height: 200px;
-  background-color: rgb(255, 0, 221);
-}
-
-.cta {
-  height: 200px;
-  background-color: rgb(68, 255, 0);
-}
+  //   &_container {
+  //     position: absolute;
+  //     left: 0;
+  //     top: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     border-radius: 0px 500px 500px 0px;
+  //   }
 
 .footer {
   height: 200px;
   background-color: rgb(55, 0, 255);
-}
+};
