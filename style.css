@@ -16,6 +16,15 @@ body,
   margin: 0;
 }
 
+a {
+  padding-top: 16px;
+  padding-bottom: 40px;
+  color: rgb(28, 80, 177);
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+
 h2 {
   font-size: 26px;
   padding: 10px;
@@ -23,7 +32,8 @@ h2 {
 
 h3 {
   font-weight: bold;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header {
@@ -89,7 +99,6 @@ h3 {
 .trust-features:nth-child(even) {
   display: flex;
   padding-right: 16px;
-  justify-content: end;
   flex-direction: row-reverse;
 }
 .trust-features {
@@ -99,6 +108,7 @@ h3 {
   flex-wrap: wrap;
 }
 .trust-features_container {
+  display: flex;
   border-radius: 0px 500px 500px 0px;
   width: auto;
   background-color: #36c5f1;
@@ -201,8 +211,9 @@ h3 {
   flex-direction: column;
   padding-top: 16px;
   padding-bottom: 16px;
-  width: 80%;
+  width: 200px;
   text-align: center;
+  margin: 30px;
 }
 .testimonials-stadistics_porcentaje {
   display: flex;
@@ -219,14 +230,18 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-bottom: 26px;
-}
-.testimonial-movie__container {
-  display: flex;
-  max-width: 600px;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 66px;
+  justify-content: left;
   width: 100%;
 }
-.testimonial-movie__container .video {
+.testimonial-movie_container {
+  display: flex;
+  max-width: 400px;
+  max-width: 720px;
+}
+.testimonial-movie_container .video {
   width: 100%;
   padding-bottom: 26px;
 }
@@ -250,16 +265,58 @@ h3 {
   padding-bottom: 20px;
   font-size: 18px;
 }
-.testimonial-movie__detail a.linkMovieDetail {
-  padding-bottom: 40px;
-  color: rgb(28, 80, 177);
-  font-size: 20px;
-  font-weight: bold;
-  width: 100%;
-}
 .testimonial-movie__detail .caption {
   padding-top: 16px;
   text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.features-container_promocion {
+  width: 300px;
+  height: 360px;
+  background-color: #d6d6d6;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.features-container_promocion .img_promocion1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.features-container_promocion .details_promocion1 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  margin: 10px;
+}
+.features-container_promocion h3 {
+  padding-bottom: 26px;
+}
+.features .pointer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.features .pointer .pointer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.features .pointer .imgPointer {
+  width: 20px;
+  margin: 10px;
+}
+.features .pointer .imgPointer:hover {
+  color: #541554;
 }
 
 .footer {
