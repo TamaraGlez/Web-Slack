@@ -18,7 +18,7 @@ body,
 
 a {
   padding-top: 16px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   color: rgb(28, 80, 177);
   font-size: 20px;
   font-weight: bold;
@@ -27,13 +27,15 @@ a {
 
 h2 {
   font-size: 26px;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 h3 {
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 20px;
 }
 
 .header {
@@ -130,18 +132,13 @@ h3 {
   flex-wrap: wrap;
   align-content: center;
 }
-.trust-features a {
-  padding: 10px;
-  color: rgb(28, 80, 177);
-  font-weight: bold;
-}
 
 .testimonials {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  padding-top: 56px;
+  padding-top: 40px;
   justify-content: center;
   text-align: center;
   width: 100%;
@@ -232,7 +229,7 @@ h3 {
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  padding-bottom: 66px;
+  padding-bottom: 60px;
   justify-content: left;
   width: 100%;
 }
@@ -277,13 +274,15 @@ h3 {
   justify-content: center;
   width: 100%;
   align-items: center;
+  background-color: #f4ede4;
 }
 .features-container_promocion {
   width: 300px;
   height: 360px;
-  background-color: #d6d6d6;
-  padding-top: 16px;
+  background-color: #ffffff;
+  padding-top: 26px;
   padding-bottom: 16px;
+  box-shadow: 5px 5px 20px;
 }
 .features-container_promocion .img_promocion1 {
   display: flex;
@@ -295,9 +294,6 @@ h3 {
   flex-wrap: wrap;
   text-align: left;
   margin: 10px;
-}
-.features-container_promocion h3 {
-  padding-bottom: 26px;
 }
 .features .pointer {
   display: flex;
@@ -314,9 +310,6 @@ h3 {
 .features .pointer .imgPointer {
   width: 20px;
   margin: 10px;
-}
-.features .pointer .imgPointer:hover {
-  color: #541554;
 }
 
 .footer {
