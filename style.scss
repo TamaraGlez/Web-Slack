@@ -38,6 +38,16 @@ h3 {
   font-size: 20px;
 };
 
+button {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  width: 380px;
+  height: 50px;
+  align-items: center;
+}
+
+ 
 .header {
   padding: 18px;
   color: white;
@@ -64,9 +74,7 @@ h3 {
       display: flex;
       width: 40px;
     }
-
-  }
-
+}
   &-title {
     display: flex;
     flex-direction: column;
@@ -74,6 +82,7 @@ h3 {
     padding-bottom: 16px;
     text-align: center;
     align-items: center;
+
     &_h1{
       font-size: 43px;
       padding-bottom: 16px;
@@ -90,14 +99,41 @@ h3 {
 
   &-register {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 18px 0px 18px 0px;
-  }
+    justify-content: center;
+
+    .email {
+      color: #541554;
+      border-width: 0px;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 900;
+    }
+    .google {
+      display: flex;
+      color: white;
+      border-width: 0px;
+      padding-right: 80px;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 900;
+      justify-content: space-around;
+
+      background-color:rgb(28, 80, 177);
+
+      .logoGoogle {
+        display: flex;
+        width: 40px;
+        border-radius: 3px;
+      }
+     }
 
   &-image {
     width: 250px;
     align-content: center;
   }
+}
 };
 
 .trust {
