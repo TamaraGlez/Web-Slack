@@ -9,9 +9,7 @@
   font-size: 14px;
 }
 
-html,
-body,
-#root {
+html, body, #root {
   height: 100%;
   margin: 0;
 }
@@ -46,13 +44,41 @@ h3 {
 }
 .header-nav {
   display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+}
+.header-nav_container {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
+}
+.header-nav_imgLogo {
+  display: flex;
+  width: 100px;
+}
+.header-nav_imgMenu {
+  display: flex;
+  width: 40px;
 }
 .header-title {
   display: flex;
   flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-align: center;
   align-items: center;
+}
+.header-title_h1 {
+  font-size: 43px;
+  padding-bottom: 16px;
+}
+.header-title .spanH1 {
+  font-size: 43px;
+  color: #f4b028;
+}
+.header-title_p {
+  font-size: 18px;
+  line-height: 23px;
 }
 .header-register {
   display: flex;
@@ -154,7 +180,7 @@ h3 {
 .testimonials-contact-containerColourFirst {
   display: flex;
   margin: 6px;
-  width: 340px;
+  width: 380px;
   height: 40px;
   border-radius: 4px 4px 4px 4px;
   background-color: #541554;
@@ -163,7 +189,7 @@ h3 {
   color: #ffffff;
   font-size: 12px;
   text-transform: uppercase;
-  width: 340px;
+  width: 380px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -174,7 +200,7 @@ h3 {
   justify-content: center;
   align-items: center;
   margin: 6px;
-  width: 340px;
+  width: 380px;
   height: 40px;
   border-style: solid;
   border-color: #541554;
@@ -185,7 +211,7 @@ h3 {
   color: #541554;
   font-size: 12px;
   text-transform: uppercase;
-  width: 340px;
+  width: 380px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -310,6 +336,54 @@ h3 {
 .features .pointer .imgPointer {
   width: 20px;
   margin: 10px;
+}
+
+.sellProduct {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.sellProduct-links_containerColourFirst {
+  display: flex;
+  margin: 6px;
+  width: 380px;
+  height: 40px;
+  border-radius: 4px 4px 4px 4px;
+  background-color: #541554;
+}
+.sellProduct-links_containerColourFirst a {
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 380px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sellProduct-links_containerWhite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px;
+  width: 380px;
+  height: 40px;
+  border-style: solid;
+  border-color: #541554;
+  border-width: thin;
+  border-radius: 4px 4px 4px 4px;
+}
+.sellProduct-links_containerWhite a {
+  color: #541554;
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 380px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer {
