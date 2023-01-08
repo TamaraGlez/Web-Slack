@@ -9,9 +9,7 @@
   font-size: 14px;
 }
 
-html,
-body,
-#root {
+html, body, #root {
   height: 100%;
   margin: 0;
 }
@@ -71,12 +69,7 @@ button {
   display: flex;
   width: 40px;
 }
-.header-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 16px;
-}
-.header-container-title {
+.header-title {
   display: flex;
   flex-direction: column;
   padding-top: 16px;
@@ -84,34 +77,32 @@ button {
   text-align: center;
   align-items: center;
 }
-.header-container-title_h1 {
+.header-title_h1 {
   font-size: 43px;
   padding-bottom: 16px;
 }
-.header-container-title .spanH1 {
+.header-title .spanH1 {
   font-size: 43px;
   color: #f4b028;
 }
-.header-container-title_p {
+.header-title_p {
   font-size: 18px;
   line-height: 23px;
 }
-.header-container-register {
+.header-register {
   display: flex;
   flex-wrap: wrap;
   padding: 18px 0px 18px 0px;
   justify-content: center;
 }
-.header-container-register .email {
+.header-register .email {
   color: #541554;
   border-width: 0px;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 900;
-  margin: 8px;
-  border-radius: 2px 2px 2px 2px;
 }
-.header-container-register .google {
+.header-register .google {
   display: flex;
   color: white;
   border-width: 0px;
@@ -120,17 +111,16 @@ button {
   font-size: 16px;
   font-weight: 900;
   justify-content: space-around;
-  margin: 8px;
-  border-radius: 2px 2px 2px 2px;
   background-color: rgb(28, 80, 177);
 }
-.header-container-register .google .logoGoogle {
+.header-register .google .logoGoogle {
   display: flex;
   width: 40px;
   border-radius: 3px;
 }
-.header-container-register-video {
-  max-width: 400px;
+.header-register-image {
+  width: 250px;
+  align-content: center;
 }
 
 .trust {
