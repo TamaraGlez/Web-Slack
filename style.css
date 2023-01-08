@@ -12,6 +12,7 @@
 html, body, #root {
   height: 100%;
   margin: 0;
+  background-color: #f4ede4;
 }
 
 a {
@@ -69,7 +70,13 @@ button {
   display: flex;
   width: 40px;
 }
-.header-title {
+.header-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header-box-title {
   display: flex;
   flex-direction: column;
   padding-top: 16px;
@@ -77,25 +84,25 @@ button {
   text-align: center;
   align-items: center;
 }
-.header-title_h1 {
+.header-box-title_h1 {
   font-size: 43px;
   padding-bottom: 16px;
 }
-.header-title .spanH1 {
+.header-box-title .spanH1 {
   font-size: 43px;
   color: #f4b028;
 }
-.header-title_p {
+.header-box-title_p {
   font-size: 18px;
   line-height: 23px;
 }
-.header-register {
+.header-box-register {
   display: flex;
   flex-wrap: wrap;
   padding: 18px 0px 18px 0px;
   justify-content: center;
 }
-.header-register .email {
+.header-box-register .email {
   color: #541554;
   border-width: 0px;
   text-transform: uppercase;
@@ -103,7 +110,7 @@ button {
   font-weight: 900;
   margin: 10px;
 }
-.header-register .google {
+.header-box-register .google {
   display: flex;
   color: white;
   border-width: 0px;
@@ -115,17 +122,17 @@ button {
   margin: 10px;
   background-color: rgb(28, 80, 177);
 }
-.header-register .google .logoGoogle {
+.header-box-register .google .logoGoogle {
   display: flex;
   width: 40px;
   border-radius: 3px;
 }
-.header-video {
+.header-box-video {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.header-video .gif {
+.header-box-video .gif {
   width: 400px;
   max-width: 700px;
 }
@@ -133,7 +140,7 @@ button {
 .trust {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 26px;
   background-color: #ffffff;
 }
 .trust-companies {
@@ -141,6 +148,8 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  flex-direction: column;
+  align-items: center;
   background-color: #f4ede4;
 }
 .trust-companies_text {
@@ -298,10 +307,10 @@ button {
   padding-bottom: 60px;
   justify-content: left;
   width: 100%;
+  background-color: #ffffff;
 }
 .testimonial-movie_container {
   display: flex;
-  max-width: 400px;
   max-width: 720px;
 }
 .testimonial-movie_container .video {
@@ -338,6 +347,7 @@ button {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   width: 100%;
   align-items: center;
   background-color: #f4ede4;
@@ -380,16 +390,24 @@ button {
 
 .sellProduct {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+  color: #f4ede4;
+  border-bottom-left-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  background-color: #541554;
 }
 .sellProduct-links_containerColourFirst {
   display: flex;
   margin: 6px;
-  width: 380px;
+  width: 330px;
   height: 40px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: thin;
   border-radius: 4px 4px 4px 4px;
   background-color: #541554;
 }
@@ -397,7 +415,7 @@ button {
   color: #ffffff;
   font-size: 12px;
   text-transform: uppercase;
-  width: 380px;
+  width: 330px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -408,18 +426,19 @@ button {
   justify-content: center;
   align-items: center;
   margin: 6px;
-  width: 380px;
+  width: 330px;
   height: 40px;
   border-style: solid;
-  border-color: #541554;
+  border-color: #ffffff;
   border-width: thin;
   border-radius: 4px 4px 4px 4px;
+  background-color: #f4ede4;
 }
 .sellProduct-links_containerWhite a {
   color: #541554;
   font-size: 12px;
   text-transform: uppercase;
-  width: 380px;
+  width: 330px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -428,5 +447,5 @@ button {
 
 .footer {
   height: 200px;
-  background-color: rgb(55, 0, 255);
+  background-color: #f4ede4;
 }/*# sourceMappingURL=style.css.map */
