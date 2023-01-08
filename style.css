@@ -101,6 +101,7 @@ button {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 900;
+  margin: 10px;
 }
 .header-register .google {
   display: flex;
@@ -111,6 +112,7 @@ button {
   font-size: 16px;
   font-weight: 900;
   justify-content: space-around;
+  margin: 10px;
   background-color: rgb(28, 80, 177);
 }
 .header-register .google .logoGoogle {
@@ -118,9 +120,14 @@ button {
   width: 40px;
   border-radius: 3px;
 }
-.header-register-image {
-  width: 250px;
-  align-content: center;
+.header-video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header-video .gif {
+  width: 400px;
+  max-width: 700px;
 }
 
 .trust {
